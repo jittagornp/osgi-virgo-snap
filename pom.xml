@@ -8,5 +8,6 @@
   <name>virgo-snap</name>
   <modules>
     <module>prototype</module>
+    <module>subproject1</module>
   </modules>
 </project>

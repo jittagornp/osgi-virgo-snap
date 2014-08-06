@@ -21,6 +21,7 @@
         <param-value>DEVELOPMENT</param-value>
     </context-param>
 
+<!--
     <servlet>
         <servlet-name>facesServlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
@@ -43,25 +44,14 @@
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
-    
-    <filter>
-        <filter-name>host-filter</filter-name>
-        <filter-class>org.eclipse.virgo.snaps.core.SnapHostFilter</filter-class>
-    </filter>
 
-    <filter-mapping>
-        <filter-name>host-filter</filter-name>
-        <url-pattern>/*</url-pattern>
-        <dispatcher>INCLUDE</dispatcher>
-        <dispatcher>FORWARD</dispatcher>
-        <dispatcher>REQUEST</dispatcher>
-    </filter-mapping>
-
-    <!-- spring ************************************************************ -->
+-->
+<!--
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/spring/osgi-*.xml</param-value>
     </context-param>
+    -->
     
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -71,6 +61,7 @@
     </listener>
  
     
+    <!--
     <filter>  
         <filter-name>encodingFilter</filter-name>  
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>  
@@ -87,6 +78,7 @@
         <filter-name>encodingFilter</filter-name>  
         <url-pattern>/*</url-pattern>  
     </filter-mapping> 
+    -->
    
     <!-- spring ************************************************************ -->
 </web-app>
