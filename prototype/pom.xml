@@ -28,7 +28,11 @@
             <artifactId>primefaces</artifactId>
             <version>4.0</version>
         </dependency>
-        
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.faces</artifactId>
+            <version>2.1.20</version>
+        </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
@@ -150,7 +154,7 @@
                         <supportedProjectType>jar</supportedProjectType>
                     </supportedProjectTypes>
                     <instructions>
-                        <Web-ContextPath>/protoype</Web-ContextPath>
+                        <Web-ContextPath>/protoype-snap</Web-ContextPath>
                         <Export-Package>
                             com.pamarin.osgi.virgosnap.prototype.*
                         </Export-Package>
@@ -162,9 +166,30 @@
                             org.springframework.web.jsf.el,
                             org.springframework.stereotype,
                             org.springframework.context.annotation,
+                            
                             org.eclipse.virgo.web.dm,
+                            
                             javax.servlet, 
-                            javax.servlet.http
+                            javax.servlet.http,
+                            javax.faces.webapp,
+                            javax.enterprise.context,
+                            javax.faces.application,                             
+                            javax.faces.component,
+                            javax.faces.event,
+                            
+                            com.sun.faces.config,
+                            com.sun.faces.application,
+                            com.sun.faces.context,
+                            com.sun.faces.lifecycle,
+                            com.sun.faces.application.view,
+                            com.sun.faces.renderkit,
+                            com.sun.faces.component.visit,
+                            com.sun.faces.facelets.impl,
+                            com.sun.faces.facelets.tag.jsf,
+                            com.sun.faces.application.resource,
+                            com.sun.faces.ext.render,
+                            com.sun.faces.facelets.component,
+                            com.sun.faces.renderkit.html_basic
                         </Import-Package>
                     </instructions>
                 </configuration>
