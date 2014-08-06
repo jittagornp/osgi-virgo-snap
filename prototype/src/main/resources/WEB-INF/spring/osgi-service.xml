@@ -12,4 +12,6 @@
     <bean id="profileService" class="com.pamarin.osgi.mavenplugin.service.impl.DefaultProfileServiceImpl"/>
     <osgi:service ref="profileService" interface="com.pamarin.osgi.mavenplugin.service.ProfileService"/>
     -->
+    
+    
 </beans>

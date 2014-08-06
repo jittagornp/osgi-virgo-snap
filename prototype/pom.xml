@@ -176,6 +176,7 @@
                             javax.faces.application,                             
                             javax.faces.component,
                             javax.faces.event,
+                            javax.faces.bean,
                             
                             com.sun.faces.config,
                             com.sun.faces.application,
@@ -189,7 +190,8 @@
                             com.sun.faces.application.resource,
                             com.sun.faces.ext.render,
                             com.sun.faces.facelets.component,
-                            com.sun.faces.renderkit.html_basic
+                            com.sun.faces.renderkit.html_basic,
+                            com.sun.faces.vendor
                         </Import-Package>
                     </instructions>
                 </configuration>
