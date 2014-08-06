@@ -185,6 +185,7 @@
                             javax.faces.component,
                             javax.faces.event,
                             javax.faces.bean,
+                            javax.servlet.annotation,
                             
                             com.sun.faces.config,
                             com.sun.faces.application,
